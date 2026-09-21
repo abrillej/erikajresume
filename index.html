@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" >
+	<title>Roommate Chores Assignment</title>
+	<style type="text/css">
+		 ol, ul { 
+     list-style-type: none;
+      }
+   </style>
+</head>
+
+<body>
+
+	<h1>Roommate Chores Assignment</h1>
+
+		<nav>
+			<a href="/weeklychoresform/">Weekly Chores Form</a> |
+			<a href="/TimeTree/">TimeTree</a>
+		</nav>
+
+<main>
+	<p>These chores are organized based on a weekly rotation and each roommate's availability. Once the form is filled out, we will have a Sunday debrief to finalize our assignments. Remember, if you skip your chore, the more you take on!</p>
+</main>
+
+<form action="http://www.roommatetimelycare.com/chores.php" method="post">
+
+Fill out this form to access your chores of the week and recieve reminders!
+<fieldset>
+	<ul>
+		<li>Name: <input type="text" name="roommatename" value="Your name here"></li>
+		<li>Room Number: <input type="text" name="roomnumber" value="Your room # here"></li>
+		<li>Cell Number: <input type="number" name="cellnumber" value="123"></li>
+		<li>Have you updated your TimeTree calendar?: <input type="text" name="yesorno" value="Yes"></li>
+		<li><br>Other comments or concerns about your availability?: <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+	</ul>
+</fieldset>
+
+<h2>What chores did you complete last week?</h2>
+<fieldset>
+<section>
+	<h3>Kitchen <em>(Choose more than one option)</em></h3>
+		<ul>
+			<li><label><input type="checkbox" name="kitchenchores" value="Wipe counters">Wipe counters</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Deep clean the stove">Disinfect the stove</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Deep clean the microwave">Deep clean the microwave</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Wash and put away your OWN dishes">Wash and put away your OWN dishes</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Clean your fridge shelf">Clean your fridge shelf</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Remove the trash">Remove the trash</label></li>
+			<li><label><input type="checkbox" name="kitchenchores" value="Unload and deep clean the dishwasher">Unload and deep clean the dishwasher</label></li>
+		</ul>
+</section>
+</fieldset>
+
+<fieldset>
+	<section>
+		<h3>Living Room <em>(Choose more than one option)</em></h3>
+			<ul>
+				<li><label><input type="checkbox" name="livingroomchores" value="Checkhere">Vacuum the carpet</label></li>
+				<li><label><input type="checkbox" name="livingroomchores" value="Disinfect and vacuum the leather couches">Disinfect and vacuum the leather couches</label></li>
+				<li><label><input type="checkbox" name="livingroomchores" value="Wipe all tables">Wipe all tables</label></li>
+				<li><label><input type="checkbox" name="livingroomchores" value="Wash and dry shared blankets">Wash and dry shared blankets</label></li>
+				<li><label><input type="checkbox" name="livingroomchores" value="Swiffer the floor">Swiffer the floor</label></li>		
+		</ul>
+	</section>
+</fieldset>
+		
+</form>
+</body>	
+
+<p><input type="submit" value="Submit">
+<input type="reset"></p>
+
+<footer>
+	<p>Thanks for filling this out! See you this Sunday for a chore debrief!</p>
+</footer>			
+</html>

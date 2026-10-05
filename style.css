@@ -1,0 +1,38 @@
+html {
+	margin: 0;
+	padding: 0;
+	background-color: aliceblue;}
+
+body {background-color: aliceblue;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	padding: 110px;
+	width: 70%; }
+
+nav {color: darkslategray;
+	font-family: Arial;}
+
+a {color: darkseagreen;
+	font-family: "M PLUS Rounded 1c", sans-serif;}
+
+h1 {color: darkslategray;
+	font-family: "Josefin Sans Medium 500", sans-serif; 
+	font-size: 40px;}
+
+main {color: darkslategray;
+	font-family: "M PLUS Rounded 1c", sans-serif;}
+
+p {color: darkslategray;
+	font-family: "M PLUS Rounded 1c", sans-serif}
+
+fieldset {color: darkslategray; 
+			font-family: "M PLUS Rounded 1c", sans-serif;
+			font-size: 18px;
+			border-color: darkseagreen;
+			border-width: 8px;
+			margin: 45px; 
+			padding: 45px;
+			width: 100%;}
+
+h2 {color: darkslategray;
+	font-family: "Josefin Sans Medium 500", sans-serif;
+	font-size: 30px}

@@ -1,85 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" >
-	<title>Roommate Chores Assignment</title>
-	<style type="text/css">
-		 ol, ul { 
-     list-style-type: none;
-      }
-   </style>
-   
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project 3: Bootstrap Basics">
+    <meta name="author" content="Erika Abrillo">
+    <title>Starter Template · Bootstrap v5.3.8</title>
 
-</head>
+   <!-- Bootstrap v5.3.8 -->
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- END LOADING BOOTSTRAP CSS -->
+    
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <h1>Roommate Chores Assignment</h1>
 
-<body>
+    <br>
 
-	<h1>Roommate Chores Assignment</h1>
+    <div class="container">
+      <header class="row">
+      </header>
+    </div>
 
-		<nav>
-			<a href="/weeklychoresform/">Weekly Chores Form</a> |
-			<a href="/TimeTree/">TimeTree</a>
-		</nav>
-
-<main>
-	<p>These chores are organized based on a weekly rotation and each roommate's availability. Once the form is filled out, we will have a Sunday debrief to finalize our assignments. Remember, if you skip your chore, the more you take on!</p>
-</main>
-
-<form action="http://www.roommatetimelycare.com/chores.php" method="post">
-
-<p>Fill out this form to access your chores of the week and recieve reminders!</p>
-<fieldset>
-	<ul>
-		<li><p>Name: <input type="text" name="roommatename" value="Your name here"></p></li>
-		<li><p>Room Number: <input type="text" name="roomnumber" value="Your room # here"></p></li>
-		<li><p>Cell Number: <input type="number" name="cellnumber" value="123"></p></li>
-		<li><p>Have you updated your TimeTree calendar?: <input type="text" name="yesorno" value="Yes"></p></li>
-		<li><p>Other comments or concerns about your availability?: <br><textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></p></li>
-	</ul>
-</fieldset>
-
-<h2>What chores did you complete last week?</h2>
-<fieldset>
-<section>
-	<h3>Kitchen <em>(Choose more than one option)</em></h3>
-		<ul>
-			<li><label><input type="checkbox" name="kitchenchores" value="Wipe counters">Wipe counters</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Deep clean the stove">Disinfect the stove</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Deep clean the microwave">Deep clean the microwave</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Wash and put away your OWN dishes">Wash and put away your OWN dishes</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Clean your fridge shelf">Clean your fridge shelf</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Remove the trash">Remove the trash</label></li>
-			<li><label><input type="checkbox" name="kitchenchores" value="Unload and deep clean the dishwasher">Unload and deep clean the dishwasher</label></li>
-		</ul>
-</section>
-</fieldset>
+        <nav class="col-md-6">
+          <ul class="nav nav-pills green">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Weekly Chores Form</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TimeTree</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cleaning Supplies List</a>
+              </li>
+          </ul>
+        </nav>
 
 <br>
+<div class="card mb-3">
+  <img src="image/cleaning.jpg" class="card-img-top" alt="Cleaning Photo">
+  <div class="card-body">
+    <h2 class="card-title">Reminder!</h2>
+    <p class="card-text">These chores are organized based on a weekly rotation and each roommate's availability. Once the form is filled out, we will have a Sunday debrief to finalize our assignments. Remember, if you skip your chore, the more you take on!</p>
+  </div>
+</div>
+<br>
+    <br>
 
-<fieldset>
-	<section>
-		<h3>Living Room <em>(Choose more than one option)</em></h3>
-			<ul>
-				<li><label><input type="checkbox" name="livingroomchores" value="Checkhere">Vacuum the carpet</label></li>
-				<li><label><input type="checkbox" name="livingroomchores" value="Disinfect and vacuum the leather couches">Disinfect and vacuum the leather couches</label></li>
-				<li><label><input type="checkbox" name="livingroomchores" value="Wipe all tables">Wipe all tables</label></li>
-				<li><label><input type="checkbox" name="livingroomchores" value="Wash and dry shared blankets">Wash and dry shared blankets</label></li>
-				<li><label><input type="checkbox" name="livingroomchores" value="Swiffer the floor">Swiffer the floor</label></li>		
-		</ul>
-	</section>
-</fieldset>
-		
-</form>
-</body>	
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container">
+            <h2>Sign-In</h2>
+              <p>Fill out this form to access your chores of the week and recieve reminders!</p>
+                <form>
+                  <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                  </div>
+                  <div class="form-group">
+                    <label for="num">Room Number:</label>
+                    <input type="password" class="form-control" id="num">
+                  </div>
+                  <div class="form-group">
+                    <label for="num">Cell Number:</label>
+                    <input type="num" class="form-control" id="num">
+                  </div>
+                </form>
+              </div>
+       </div>
+     </div> <!-- end row hero -->
 
-<input type="submit" value="Submit"> <input type="reset">
+    <br>
 
-<footer>
-	<p>Thanks for filling this out! See you this Sunday for a chore debrief!</p>
-</footer>			
+<h2>What chores did you complete last week?</h2>
+
+     <div class="row">
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Wipe counters" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">Wipe Counters</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Disinfect the stove" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">Disinfect the stove</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Deep clean the microwave" id="thirdCheckbox">
+            <label class="form-check-label" for="thirdCheckbox">Deep clean the microwave</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Wash and put away your OWN dishes" id="fourthCheckbox">
+            <label class="form-check-label" for="fourthCheckbox">Wash and put away your OWN dishes</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Clean your fridge shelf" id="fifthCheckbox">
+            <label class="form-check-label" for="fifthCheckbox">Clean your fridge shelf</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Remove the trash" id="sixthCheckbox">
+            <label class="form-check-label" for="sixthCheckbox">Remove the trash</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Unload and deep clean the dishwasher" id="seventhCheckbox">
+            <label class="form-check-label" for="seventhCheckbox">Unload and deep clean the dishwasher</label>
+          </li>
+        </ul>
+      </div> <!-- end section 1-->
+    
+     <p><h3>Living Room <em>(Choose more than one option)</em></h3><p>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Vacuum the carpet" id="eigthCheckbox">
+            <label class="form-check-label" for="eigthCheckbox">Vacuum the carpet</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Disinfect and vacuum the leather couches" id="ninethCheckbox">
+            <label class="form-check-label" for="ninethCheckbox">Disinfect and vacuum the leather couches</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Wipe all tables" id="tenthCheckbox">
+            <label class="form-check-label" for="tenthCheckbox">Wipe all tables</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Wash and dry shared blankets" id="eleventhCheckbox">
+            <label class="form-check-label" for="eleventhCheckbox">Wash and dry shared blankets</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="Swiffer the floor" id="twelfthCheckbox">
+            <label class="form-check-label" for="twelfthCheckbox">Swiffer the floor</label>
+          </li>
+        </ul>
+      </div> <!-- end section 1-->
+    </div> <!-- end row for 2 sections -->
+
+    <br>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+<button type="reset" class="btn btn-primary">Reset</button>
+
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+      
+  </body>
 </html>

@@ -35,4 +35,6 @@ fieldset {color: darkslategray;
 
 h2 {color: darkslategray;
 	font-family: "Josefin Sans Medium 500", sans-serif;
-	font-size: 30px}
+	font-size: 30px}/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+
+/*custom css can be kept for bootstrap; html must be changed*/

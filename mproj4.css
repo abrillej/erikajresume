@@ -1,0 +1,25 @@
+/* DO NOT DELETE THE body DECLARATION BELOW, BUT YOU MAY EDIT IT */
+html {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;}
+
+body {background-color: aliceblue;
+    padding-top: 56px;
+    font-family: "M PLUS Rounded 1c", sans-serif;}
+
+nav {color: darkslategray;
+    font-family: Arial;}
+
+a {color: darkseagreen;
+    font-family: "M PLUS Rounded 1c", sans-serif;}
+
+h1 {color: darkslategray;
+    font-family: "Josefin Sans Medium 500", sans-serif; 
+    font-size: 40px;}
+
+main {color: darkslategray;
+    font-family: "M PLUS Rounded 1c", sans-serif;}
+
+p {color: darkslategray;
+    font-family: "M PLUS Rounded 1c", sans-serif}
